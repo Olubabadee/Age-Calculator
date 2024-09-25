@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Le-Prof | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="form-section">
+        <form action="" class="inputform">
+          <label class="up" for="day">Day</label>
+          <input type="text" placeholder="DD" />
+          <label class="up" for="month">Month</label>
+          <input type="text" />
+          <label class="up" for="year">Year</label>
+          <input type="text" />
+        </form>
+      </div> -->
+      <div class="calendar">
+        <div class="date-input">
+          <label for="day" class="poppins-bold up day-label">Day</label>
+          <input
+            type="text"
+            id="day"
+            name="day"
+            placeholder="DD"
+            class="day-input"
+          />
+          <p class="error-message hidden day-error">The field is required</p>
+        </div>
+        <div class="date-input">
+          <label for="month" class="poppins-bold up month-label">Month</label>
+          <input
+            type="text"
+            id="month"
+            name="month"
+            placeholder="MM"
+            class="month-input"
+          />
+          <p class="error-message hidden month-error">The field is required</p>
+        </div>
+        <div class="date-input">
+          <label for="year" class="poppins-bold up year-label">Year</label>
+          <input
+            type="text"
+            id="year"
+            name="year"
+            placeholder="YYYY"
+            class="year-input"
+          />
+          <p class="error-message hidden year-error">The field is required</p>
+        </div>
+      </div>
+      <div class="abs circle">
+        <img src="assets/images/icon-arrow.svg" alt="" />
+      </div>
+
+      <hr class="h-line" width="90%" />
+
+      <div class="text-section">
+        <p><span id="years">--</span>years</p>
+        <p><span id="months">--</span>months</p>
+        <p><span id="days">--</span>days</p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://github.com/olubabadee" target="_blank">Le Prof GITHUB</a
+      >. Coded by <a href="#">Le_Prof</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
