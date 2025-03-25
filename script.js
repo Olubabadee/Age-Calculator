@@ -201,3 +201,9 @@ calculateButton.addEventListener("click", function () {
     );
   }
 });
+
+// OVERLAY
+document.getElementById("start-btn").addEventListener("click", function () {
+  document.querySelector(".overlay").classList.add("hidden");
+  document.querySelector(".age-calculator").style.display = "block";
+});
