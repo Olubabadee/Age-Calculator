@@ -286,7 +286,7 @@ img {
   }
 }
 
-@media (max-width: 830px) {
+/* @media (max-width: 830px) {
   body {
     overflow: hidden;
   }
@@ -316,5 +316,66 @@ img {
     left: 50%;
     top: 30%;
     margin-top: 10px;
+  }
+} */
+
+@media (max-width: 600px) {
+  .container {
+    width: 95vw;
+    padding: 20px;
+    max-width: 360px;
+    border-radius: 20px 20px 80px 20px;
+    position: relative;
+  }
+
+  .calendar {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: flex-end; /* Ensures labels are positioned lower */
+  }
+
+  .date-input {
+    display: block;
+  }
+
+  label {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px; /* Moves labels down */
+  }
+
+  input {
+    width: 70px;
+    height: 45px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* ✅ Center the button perfectly */
+  .abs {
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%, -50%); /* Perfect centering */
+  }
+
+  .text-section {
+    margin-top: 30px;
+  }
+  .text-section p {
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .text-section span {
+    font-size: 45px;
+  }
+
+  .attribution {
+    display: none;
   }
 }
